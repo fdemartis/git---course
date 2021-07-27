@@ -7,6 +7,8 @@ driver = new Builder().forBrowser('firefox').build();
 await driver.get('https://www.mercadolibre.com.ar/');
 //click options of header menu
 await driver.findElement(By.xpath("//a[text()='Ofertas']")).click();
+await driver.findElement(By.xpath("//a[text()='Ofertas']")).click();
+
 await driver.findElement(By.xpath("//a[text()='Historial']")).click();
 await driver.findElement(By.xpath("//a[text()='Supermercado']")).click();
 await driver.findElement(By.xpath("//a[text()='Tiendas oficiales']")).click();
